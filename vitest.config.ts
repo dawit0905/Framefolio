@@ -1,8 +1,9 @@
 import { defineConfig } from 'vitest/config';
 import { svelte } from '@sveltejs/vite-plugin-svelte';
+import tsconfigPaths from 'vite-tsconfig-paths';
 
 export default defineConfig({
-    plugins: [svelte()],
+    plugins: [svelte(), tsconfigPaths()],
     test: {
         globals: true,
         include: ['src/**/*.{test,spec}.{js,ts}'],

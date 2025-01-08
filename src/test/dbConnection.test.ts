@@ -1,4 +1,4 @@
-import { connectToDatabase } from '../../src/db/mongo';
+import { connectToDatabase } from '$db/mongo';
 import { describe, it, expect } from 'vitest';
 
 
